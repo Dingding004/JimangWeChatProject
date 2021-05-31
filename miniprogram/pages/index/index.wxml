@@ -1,0 +1,42 @@
+
+<view class="pyg_index">
+  <searchInput></searchInput>
+  <view class="index_swiper">
+    <swiper autoplay circular indicator-dots indicator-active-color="#8fb4b6">
+        <swiper-item>
+          <image mode="widthFix" src=""></image>
+        </swiper-item>
+        <swiper-item>
+          <image mode="widthFix" src=""></image>
+        </swiper-item>
+        <swiper-item>
+          <image mode="widthFix" src=""></image>
+        </swiper-item>  
+    </swiper>
+  </view>
+  <view class="index_case">
+    <view class="index_reserve1">
+    <navigator url="/pages/search/index" open-type="navigate">
+   积分商城
+    </navigator>
+    </view>
+    <view class="index_reserve2">
+    <navigator url="/pages/order/index" open-type="navigate">
+   回收预约
+    </navigator>
+      
+    </view>
+    <view class="index_reserve3">
+    <navigator url="/pages/search/index" open-type="navigate">
+   分类信息
+    </navigator>
+        
+    </view>
+    <view class="index_reserve4">
+    <navigator url="/pages/search/index" open-type="navigate">
+   回收动态
+    </navigator>
+      
+    </view>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "searchInput":"../../component/searchInput/searchInput"
+  },
+  "navigationBarTitleText": "回收先锋"
+}

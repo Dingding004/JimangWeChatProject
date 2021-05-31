@@ -1,0 +1,65 @@
+page{
+  background-color: #8ff4b6;
+}
+
+view{
+  color: var(--themeColor);
+}
+
+.index_swiper{
+  margin: 20rpx;
+}
+
+.index_reserve1{
+  margin: 20rpx;
+  background-color: #88d0fa;
+  width: 713rpx;
+  height: 150rpx;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 150rpx;
+  color: white;
+  border-radius: 50rpx;
+}
+.index_reserve2{
+  margin: 20rpx;
+  background-color: #85df73;
+  width: 713rpx;
+  height: 150rpx;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 150rpx;
+  color: white;
+  border-radius: 50rpx;
+}
+.index_reserve3{
+  margin: 20rpx;
+  background-color: #95c063;
+  width: 713rpx;
+  height: 150rpx;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 150rpx;
+  color: white;
+  border-radius: 50rpx;
+}
+.index_reserve4{
+  margin: 20rpx;
+  background-color: #50804e;
+  width: 713rpx;
+  height: 150rpx;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 150rpx;
+  color: white;
+  border-radius: 50rpx;
+}
+
+swiper{
+  width: 100%;
+  height: 300rpx;
+}
+
+image{
+  width: 100%;
+}
