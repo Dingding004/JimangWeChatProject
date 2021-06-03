@@ -8,20 +8,25 @@ const db = cloud.database()
 exports.main = async (event, context) => {
 
   const wxContext = cloud.getWXContext()
-  const { openid } = wxContext
- 
+  const openid = wxContext.OPENID
 
-  db.collection('user').add({
-    data: {
-      _id: openid,
-      point: 0
-    }
+  const userdata = {
+    _id: openid,
+    point: 0,
+    address:[],
+    default_address: null,
+    phone_number: null,
+    authority: 0
+  }
+  db.collection('user').doc(openid).get().then(res => { 
+    // user exists
+    return res.data
+  }, err => {
+    // register user
+    db.collection('user').add({
+      data: userdata
+    })
   })
 
-  return {
-    event,
-    openid: wxContext.OPENID,
-    appid: wxContext.APPID,
-    unionid: wxContext.UNIONID,
-  }
+  return userdata
 }
