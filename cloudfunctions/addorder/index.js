@@ -18,17 +18,17 @@ exports.main = async (event, context) => {
   }
 
   // time
-  // db.serverDate() 有bug, 用不了getHours
+  // db.serverDate() has bug, cannt use the function getHours()
   // TODO: check the stored date is whether server time
   const created_time = new Date()
   var expected_time;
   const _t = created_time;
 
-  if (_t.getHours() < 11) {  // 11点收垃圾
+  if (_t.getHours() < 11) {  // Collect garbage at 11
     expected_time = new Date(_t.getFullYear(), _t.getMonth(), _t.getDate(), 11, 0, 0, 0)
-  } else if (created_time.getHours() < 16) { // 16点收垃圾
+  } else if (created_time.getHours() < 16) { // Collect garbage at 16
     expected_time = new Date(_t.getFullYear(), _t.getMonth(), _t.getDate(), 16, 0, 0, 0)
-  } else {  // 第二天 11点收垃圾
+  } else {  // Collect garbage at 11 tommorow
     expected_time = new Date(_t.getFullYear(), _t.getMonth(), _t.getDate() + 1, 11, 0, 0, 0)
   }
 
