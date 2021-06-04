@@ -1,3 +1,4 @@
 <!--pages/test/index.wxml-->
 <!-- <text>pages/test/index.wxml</text> -->
 <button bindtap="getuserinfo">getuserinfo</button>
+<button bindtap="addaddress">addaddress</button>

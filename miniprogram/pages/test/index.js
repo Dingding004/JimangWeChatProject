@@ -4,6 +4,25 @@ Page({
     wx.cloud.callFunction({
       name:"getuserinfo",
       data :{}
+    }).then(res => {
+      console.log(res)
+    }).catch(err => {
+      console.log("?")
+    })
+  },
+  addaddress() {
+    wx.cloud.callFunction({
+      name:"addaddress",
+      data :{
+        district: '1xx',
+        community: 'community',
+        specific_address: 'dwadaw302'
+      }
+    }).then(res => {
+      console.log('1')
+      console.log(res)
+    }, err=> {
+      console.log('?')
     })
   },
 
