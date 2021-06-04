@@ -23,4 +23,4 @@
 
 
 ## TODO: 
- -[ ] Query all orders in btaches REFFEREMCE: https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/read.html
+ - [ ] Query all orders in btaches REFFEREMCE: https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/read.html
