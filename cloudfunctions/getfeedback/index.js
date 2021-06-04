@@ -15,22 +15,24 @@ exports.main = async (event, context) => {
   var whereObj = {};
 
   const _ = db.command
-  if (event.status != null) {
-    whereObj.status = _.eq(event.status)
+  if (event.type != null) {
+    whereObj.type = _.eq(event.type)
   }
   if (event._userid != null) {
-    // Object.assign(whereObj, {_userid: _.eq(event._userid)})
     whereObj._userid = _.eq(event._userid)
+  }
+  if (event.title != null) {
+    whereObj.title = _.eq(event.title)
   }
   
   // TODO: Query all orders in btaches
   // REFFEREMCE: https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/read.html
-  await db.collection('order').where(whereObj).get().then(res => {
+  await db.collection('feedback').where(whereObj).get().then(res => {
     data = res.data
   }).catch(err => {
     errCode = 1
     data = err
-    errMsg = 'Database: Order Query Fail'
+    errMsg = 'Database: Feedback Query Fail'
   })
 
   return data
