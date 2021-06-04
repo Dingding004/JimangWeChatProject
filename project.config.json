@@ -40,6 +40,7 @@
   "appid": "wx05483cfca90a496f",
   "projectname": "lajibao01",
   "libVersion": "2.14.1",
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
   "condition": {
     "search": {
       "list": []

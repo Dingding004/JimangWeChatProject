@@ -8,7 +8,8 @@
     "pages/feedback/index",
     "pages/login/index",
     "pages/auth/index",
-    "pages/pay/index"
+    "pages/pay/index",
+    "pages/test/index"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -47,6 +48,12 @@
       {
         "pagePath": "pages/user/index",
         "text": "我的",
+        "iconPath": "icons/my.png",
+        "selectedIconPath": "icons/my-o.png"
+      },
+      {
+        "pagePath": "pages/test/index",
+        "text": "test",
         "iconPath": "icons/my.png",
         "selectedIconPath": "icons/my-o.png"
       }

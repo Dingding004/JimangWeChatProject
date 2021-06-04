@@ -10,3 +10,17 @@
 
 - [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
 
+
+## 云开发api
+[api](https://app.gitbook.com/@jimschenchen/s/jimschenchen/~/drafts/-MbLv83drRacYLmrB-FV/projects/ji-mang-hui-shou)
+
+## Database 
+### user
+### address
+### feedback
+### global
+### order
+
+
+## TODO: 
+ -[ ] Query all orders in btaches REFFEREMCE: https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/read.html
