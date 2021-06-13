@@ -42,7 +42,8 @@ exports.main = async (event, context) => {
       expected_time: expected_time,
       status: 0,
       earned_point: 0,
-      garbage_type: [],
+      garbage_type: event.garbage_type || [],
+      comment: event.comment || ''
     }
   }).catch(err => {
     errCode = 1
