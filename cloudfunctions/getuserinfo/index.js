@@ -24,7 +24,19 @@ exports.main = async (event, context) => {
   await db.collection('user').doc(wxContext.OPENID).get().then(res => { 
     // user exists
     userdata = res.data
-  }, err => {
+    return res
+  }).then(res => {
+    const _ = db.command
+    db.collection('address').where({
+      _id: _.in(res.data.address)
+    }).get().then(res => {
+      userdata.address = res.data
+    }).catch(err => {
+      errCode = 1
+      data = err
+      errMsg = 'Database: Address Query Fail'
+    })
+  }).catch(err => {
     // register user
     db.collection('user').add({
       data: userdata
